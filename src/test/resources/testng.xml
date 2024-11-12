@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Project Test Suite">
+    <test name="Authentication Tests">
+        <classes>
+            <class name="tests.LoginTest"/>
+            <class name="tests.RegisterTest"/>
+            <class name="tests.LogoutTest"/>
+        </classes>
+    </test>
+
+    <test name="Product Tests">
+        <classes>
+            <class name="tests.ProductFilterTest"/>
+            <class name="tests.CartTest"/>
+            <class name="tests.CartDeleteTest"/>
+            <class name="tests.ProductDetailsTest"/>
+        </classes>
+    </test>
+</suite>
