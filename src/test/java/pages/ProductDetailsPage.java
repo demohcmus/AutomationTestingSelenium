@@ -16,11 +16,9 @@ public class ProductDetailsPage {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    // Locators
     private By descriptionTab = By.id("nav-about-tab");
     private By descriptionContent = By.xpath("//div[@id='nav-about']//p[contains(text(), 'ASUS TUF Gaming F15 FX506HF HN017W')]");
 
-    // Kiểm tra nếu tab "Description" hiển thị
     public boolean isDescriptionTabDisplayed() {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(descriptionTab)).isDisplayed();
     }

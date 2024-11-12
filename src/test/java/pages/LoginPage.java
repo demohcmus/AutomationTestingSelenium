@@ -43,13 +43,10 @@ public class LoginPage {
         loginBtn.click();
     }
 
-    // Kiểm tra nếu chuyển hướng tới trang sau khi đăng nhập thành công (ví dụ: trang chính hoặc trang chào mừng)
     public boolean isRedirectedToHomePage() {
-        // URL của trang chủ, điều chỉnh URL này theo ứng dụng của bạn
-        return wait.until(ExpectedConditions.urlToBe("http://localhost:9091/home"));
+        return wait.until(ExpectedConditions.urlToBe("http://localhost:9091/"));
     }
 
-    // Kiểm tra nếu có thông báo lỗi khi đăng nhập thất bại
     public boolean isErrorMessageDisplayed() {
         try {
             WebElement errorElement = wait.until(ExpectedConditions.visibilityOfElementLocated(errorMessage));

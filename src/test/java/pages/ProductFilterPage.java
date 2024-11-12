@@ -53,10 +53,8 @@ public class ProductFilterPage {
     public void clickFilterButton() {
         WebElement button = wait.until(ExpectedConditions.elementToBeClickable(filterButton));
 
-        // Cuộn đến nút nếu chưa hiển thị hoàn toàn trên màn hình
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", button);
 
-        // Sử dụng JavaScript để nhấp vào nút
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", button);
     }
 

@@ -66,7 +66,6 @@ public class RegisterPage {
     }
 
     // Kiểm tra nếu thông báo lỗi "Email đã tồn tại" xuất hiện
-    // Kiểm tra nếu thông báo lỗi "Email đã tồn tại" xuất hiện, sau khi chờ 2 giây
     public boolean isEmailExistsErrorDisplayed() {
         try {
             Thread.sleep(2000);

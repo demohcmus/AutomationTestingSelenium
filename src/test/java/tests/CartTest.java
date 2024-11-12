@@ -31,7 +31,6 @@ public class CartTest extends BaseTest {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.urlToBe("http://localhost:9091/"));
 
-        // Sử dụng phương thức clickAddToCartButton() từ CartPage
         cartPage.clickAddToCartButton();
 
         Utils.sleep(3000);
